@@ -5,12 +5,14 @@ public class RectTriangle extends Shape {
 	private double height;
 
 	public RectTriangle(double width, double height) {
+		this.width = width;
+		this.height = height;
 	}
 
 	@Override
 	public double getArea() {
 		System.out.println("");
-		return 0.;
+		return this.height * this.width;
 	}
 
 	@Override
