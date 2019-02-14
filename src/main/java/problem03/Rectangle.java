@@ -12,18 +12,18 @@ public class Rectangle extends Shape implements Resizable {
 
 	@Override
 	public void resize(double rate) {
-		this.width *= rate;
-		this.height *= rate;
+		width *= rate;
+		height *= rate;
 	}
 
 	@Override
 	public double getArea() {
-		return this.width * this.height;
+		return width * height;
 	}
 
 	@Override
 	public double getPerimeter() {
-		return 2 * (this.width + this.height);
+		return 2 * (width + height);
 	}
 	
 }
